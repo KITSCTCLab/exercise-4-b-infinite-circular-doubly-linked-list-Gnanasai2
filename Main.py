@@ -1,4 +1,4 @@
-rom typing import Optional
+from typing import Optional
 
 class Node:
 

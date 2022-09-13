@@ -1,5 +1,7 @@
-from typing import Optional
+rom typing import Optional
+
 class Node:
+
     def __init__(self, data=None, next=None):
         """
         Initialises the Node with given attributes
@@ -7,12 +9,15 @@ class Node:
         self.data = data
         self.next = next
 
+
 class LinkedList:
+
     def __init__(self):
         """
         Initialize the head
         """
         self.head = None
+
     def insert_at_end(self, data):
         new = Node(data, None)
         current = self.head
@@ -31,7 +36,9 @@ class LinkedList:
             current = current.next
         print(elements)
 
+
 class Solution:
+
     def addTwoNumbers(self, first_list: Optional[LinkedList], second_list: Optional[LinkedList]) -> Optional[LinkedList]:
         result = self.get_num(first_list) + self.get_num(second_list)
         sum_list = LinkedList()
@@ -49,7 +56,7 @@ class Solution:
             curr = curr.next
         return int(num)
 
-# Do not edit the following code     
+# Do not edit the following code      
 # Create an instance for LinkedList
 first_list = LinkedList()
 # Create an another instance for LinkedList

@@ -1,4 +1,5 @@
-from typing import Optional class Node: 
+from typing import Optional 
+class Node: 
 """ 
  
 This class describes Node objects to act as elements of the LinkedList 
